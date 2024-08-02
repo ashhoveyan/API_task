@@ -19,7 +19,7 @@ const updateTaskSchema = Joi.object({
     title: Joi.string().regex(/^[a-zA-Z][a-zA-Z0-9 ]*$/).optional(),
     description: Joi.string().optional(),
     taskDate: Joi.date().iso().optional()
-}).min(1); // Ensure at least one field is provided for update
+}).min(1);
 
 const validate = {
     getTasks: (req) => {
