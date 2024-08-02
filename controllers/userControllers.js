@@ -30,7 +30,6 @@ const userController = {
             res.status(400).send({"message": "Invalid registration data"});
         }
     },
-
     login(req, res) {
         const body = req.body;
 
